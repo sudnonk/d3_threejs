@@ -2,9 +2,10 @@
   "name": "d3_threejs",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode=development",
+    "start": "webpack-dev-server --mode=development"
   },
   "author": "sudnonk <sudnonk12@yahoo.co.jp>",
   "license": "MIT",
@@ -12,12 +13,19 @@
     "type": "git",
     "url": "https://github.com/sudnonk/d3_threejs.git"
   },
+
   "dependencies": {
     "@types/d3": "^5.0.0",
     "@types/node": "^10.9.4",
     "@types/three": "^0.92.18",
     "d3": "^5.7.0",
+    "npm": "^6.4.1",
     "three": "^0.96.0",
-    "tsc": "^1.20150623.0"
+    "ts-loader": "^5.0.0",
+    "tsc": "^1.20150623.0",
+    "typescript": "^3.0.3",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.8"
   }
 }
